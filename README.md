@@ -12,5 +12,5 @@ The module requires the RPM packages for the TBMR software.
 TODO:
 - Add support for 32-bit linux, Done
 - Add support for solaris
-- Add support for AIX, possile?
+- Add support for AIX, possible?
 - Use yum repo when availabel 
