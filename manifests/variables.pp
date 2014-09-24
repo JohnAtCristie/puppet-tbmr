@@ -17,7 +17,7 @@ class tbmr::variables{
                         $provider                       = 'rpm'
                         case $::hardwareisa{
                                 i386: {
-                                        $file           = 'tmp/tbmr-7.1-2.i386.rpm'
+                                        $file           = '/tmp/tbmr-7.1-2.i386.rpm'
                                         $source         = 'puppet:///modules/tbmr/tbmr-7.1-2.i386.rpm'
                                 } #END 32bit
                                 x86_64: {
