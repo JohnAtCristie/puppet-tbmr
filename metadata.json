@@ -1,0 +1,17 @@
+{
+  "name": "CristieNordic-puppet_tbmr",
+  "version": "0.4.0",
+  "author": "John Skjoönsberg",
+  "summary": "Install Cristie TBMR software",
+  "license": "GPL3",
+  "source": "https://github.com/JohnAtCristie/puppet-tbmr",
+  "project_page": "https://github.com/JohnAtCristie/puppet-tbmr",
+  "issues_url": "https://github.com/JohnAtCristie/puppet-tbmr/issues",
+  "dependencies": [
+    {
+      "name": "puppetlabs-stdlib",
+      "version_range": ">= 1.0.0"
+    }
+  ]
+}
+
