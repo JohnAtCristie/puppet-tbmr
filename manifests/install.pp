@@ -18,15 +18,15 @@
 #
 class tbmr::install inherits tbmr {
         file { 'tbmr-7.1-2' :
-       ensure                   => present,
-           path                         => $::tbmr::file,
-       source                   => $::tbmr::source
+		ensure                   => present,
+		path                     => $::tbmr::file,
+		source                   => $::tbmr::source,
         }
         package {'tmbr':
                 allow_virtual   => false,
                 require         => File['tbmr-7.1-2'],
                 ensure          => installed,
                 provider        => $::tbmr::provider,
-                source          => $::tbmr::file
+                source          => $::tbmr::file,
         }
 }
