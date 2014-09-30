@@ -1,4 +1,3 @@
-#######################################################
 # Install TBMR from local RMP file
 # > Cristie Bare machine recovery for IBM Tivoli storage manager (TSM)
 # > is a disaster recovery software for quick restore
@@ -10,9 +9,8 @@
 # Version: 0.3
 # Author: John Skjönsberg <john.skjonsberg@cristie.se>
 # File: tbmr/manifests/variables.pp
-#######################################################
 class tbmr::variables{
-        case $::osfamily {
+	case $::osfamily {
                 redhat:{
                         $provider                       = 'rpm'
                         case $::hardwareisa{
@@ -29,5 +27,5 @@ class tbmr::variables{
                 default:{
                         fail('Only Redhat support at the moment')
                 }
-        }#END OSFAMILY
+	}#END OSFAMILY
 }#END CLASS
