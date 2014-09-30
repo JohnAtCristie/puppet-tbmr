@@ -9,8 +9,8 @@ to same or dissimilar hardware.
 
 The module requires the RPM packages for the TBMR software kept in the files dir. 
 
-www.cristie.se
-www.cristie.com
+- www.cristie.se
+- www.cristie.com
 
 TODO:
 - Add support for solaris
