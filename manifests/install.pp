@@ -1,14 +1,21 @@
+# Class: tbmr::install
+#
 # Install TBMR from local RMP file
-# > Cristie Bare machine recovery for IBM Tivoli storage manager (TSM)
-# > is a disaster recovery software for quick restore
-# > to same or dissimilar hardware.
+#
+# Cristie Bare machine recovery for IBM Tivoli storage manager (TSM)
+#
+# is a disaster recovery software for quick restore
+#
+# to same or dissimilar hardware.
 #
 # http://www.cristie.com
+#
 # http://www.cristie.se
 #
-# Version: 0.3
+# Version: 0.4
+#
 # Author: John Skjönsberg <john.skjonsberg@cristie.se>
-# File: tbmr/manifests/init.pp
+#
 class tbmr::install inherits tbmr {
         file { 'tbmr-7.1-2' :
        ensure                   => present,
