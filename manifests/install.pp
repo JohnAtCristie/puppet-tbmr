@@ -17,6 +17,7 @@
 # Author: John Skjönsberg <john.skjonsberg@cristie.se>
 #
 class tbmr::install inherits tbmr {
+	notify{"The value is: ${::tbmr::source}": }
         file { 'tbmr-7.1-2' :
 		ensure                   => present,
 		path                     => $::tbmr::file,

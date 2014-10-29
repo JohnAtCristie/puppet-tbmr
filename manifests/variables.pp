@@ -21,11 +21,11 @@ class tbmr::variables{
                         case $::hardwareisa{
                                 i386: {
                                         $file           = '/tmp/tbmr-7.1-2.i386.rpm'
-                                        $source         = 'puppet:///modules/tbmr/tbmr-7.1-2.i386.rpm'
+                                        $source         = 'puppet:///modules/puppet-tbmr/tbmr-7.1-2.i386.rpm'
                                 } #END 32bit
                                 x86_64: {
                                         $file           = '/tmp/tbmr-7.1-2.x86_64.rpm'
-                                        $source         = 'puppet:///modules/tbmr/tbmr-7.1-2.x86_64.rpm'
+                                        $source         = 'puppet:///modules/puppet-tbmr/tbmr-7.1-2.x86_64.rpm'
                                 }#END X86
                         }#END HARDWAREISA
                 } #END REDHAT

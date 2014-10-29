@@ -25,7 +25,7 @@ class tbmr(
         validate_string($file)
         validate_string($source)
         anchor {'tbmr::begin':} ->
-        class {'::tbmr::install':}
+        class {'::tbmr::install':} ->
         class {'::tbmr::license':}
         anchor {'tbmr::end':}
 }

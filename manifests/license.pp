@@ -18,7 +18,7 @@ class tbmr::license{
    exec {'echo > /TBMRCFG/`licmgr --sig`.sig':
            command         => 'touch /TBMRCFG/`licmgr --sig`.sig',
            user            => root,
-       onlyif          => ['test -f /TBMRCFG/disrec.ini','test -f /TBMRCFG/`licmgr --sig`.sig'],
+       onlyif          => ['test -f /TBMRCFG/disrec.ini','test -f /TBMRCFG/*.sig'],
        path            => '/usr/bin',
    }
 }
